@@ -74,7 +74,7 @@ namespace dflistvardb
 
             using (var stream = client.GetStream())
             {
-                string json = "{\"type\":\"template\",\"source\":\"vmd2df\",\"data\":\"{\\\"name\\\":\\\"" + filename + "\\\",\\\"data\\\":\\\"" + templateData + "\\\"}\"}";
+                string json = "{\"type\":\"template\",\"source\":\"dflistvardb\",\"data\":\"{\\\"name\\\":\\\"" + filename + "\\\",\\\"data\\\":\\\"" + templateData + "\\\"}\"}";
                 var buffer = Encoding.UTF8.GetBytes(json);
                 stream.Write(buffer, 0, buffer.Length);
             }
